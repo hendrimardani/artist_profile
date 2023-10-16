@@ -20,35 +20,33 @@
             android:src="@drawable/rafijpg"
             app:civ_border_color="@color/orange"
             app:civ_border_width="3dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            tools:layout_editor_absoluteX="8dp"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="38dp" />
 
         <TextView
             android:id="@+id/tv_item_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="136dp"
             android:textColor="@color/blue"
             android:textSize="22sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.429"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.118"
+            app:layout_constraintStart_toEndOf="@+id/tv_item_photo"
+            app:layout_constraintTop_toTopOf="@+id/tv_item_photo"
             tools:text="Nama Artist" />
 
         <TextView
             android:id="@+id/tv_item_description"
-            android:layout_width="260dp"
+            android:layout_width="250dp"
             android:layout_height="100dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:maxLines="5"
             app:layout_constraintBottom_toBottomOf="@+id/tv_item_photo"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_item_name"
             app:layout_constraintTop_toBottomOf="@+id/tv_item_name"
-            app:layout_constraintVertical_bias="1.0"
             tools:text="Deksripsi" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
