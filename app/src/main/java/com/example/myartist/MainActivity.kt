@@ -1,9 +1,16 @@
 package com.example.myartist
 
+import android.animation.ObjectAnimator
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import android.view.View
+import android.view.animation.AnticipateInterpolator
 import android.widget.Toast
+import androidx.annotation.RequiresApi
+import androidx.core.animation.doOnEnd
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myartist.databinding.ActivityMainBinding
@@ -12,6 +19,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var rvArtist: RecyclerView
     private var list = ArrayList<Artists>()
+    @RequiresApi(Build.VERSION_CODES.S)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -22,6 +30,9 @@ class MainActivity : AppCompatActivity() {
 
         list.addAll(getListArtist())
         showRecyclerList()
+
+        // Aktifkan Animasi
+        animation()
     }
 
     private fun getListArtist(): ArrayList<Artists> {
@@ -54,8 +65,33 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-            R.id.action
+            R.id.action_list -> rvArtist.layoutManager = LinearLayoutManager(this)
+            R.id.action_grid -> rvArtist.layoutManager = GridLayoutManager(this, 2)
+//            R.id.action_about -> {
+//
+//            }
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    @RequiresApi(Build.VERSION_CODES.S)
+    private fun animation() {
+        splashScreen.setOnExitAnimationListener { splashScreenView ->
+            // Create your custom animation.
+            val slideUp = ObjectAnimator.ofFloat(
+                splashScreenView,
+                View.TRANSLATION_Y,
+                0f,
+                -splashScreenView.height.toFloat()
+            )
+            slideUp.interpolator = AnticipateInterpolator()
+            slideUp.duration = 200L
+
+            // Call SplashScreenView.remove at the end of your custom animation.
+            slideUp.doOnEnd { splashScreenView.remove() }
+
+            // Run your animation.
+            slideUp.start()
+        }
     }
 }

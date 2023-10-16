@@ -40,7 +40,6 @@ class ListArtistsAdapter(private val listArtists: ArrayList<Artists>): RecyclerV
             intentToDetail.putExtra("key_artists", listArtists[holder.adapterPosition])
             holder.itemView.context.startActivity(intentToDetail)
         }
-
     }
 
     override fun getItemCount() = listArtists.size
