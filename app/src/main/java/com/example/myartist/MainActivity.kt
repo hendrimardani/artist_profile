@@ -34,6 +34,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun showRecyclerList() {
         rvArtist.layoutManager = LinearLayoutManager(this)
-        rvArtist
+        val listArtistsAdapter = ListArtistsAdapter(list)
     }
 }
