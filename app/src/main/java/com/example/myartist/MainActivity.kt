@@ -2,6 +2,7 @@ package com.example.myartist
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myartist.databinding.ActivityMainBinding
 
@@ -29,5 +30,10 @@ class MainActivity : AppCompatActivity() {
             listArtists.add(artists)
         }
         return listArtists
+    }
+
+    private fun showRecyclerList() {
+        rvArtist.layoutManager = LinearLayoutManager(this)
+        rvArtist
     }
 }
