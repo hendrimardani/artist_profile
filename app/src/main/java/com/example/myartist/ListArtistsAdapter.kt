@@ -14,7 +14,7 @@ class ListArtistsAdapter(private val listArtists: ArrayList<Artists>): RecyclerV
         fun onItemClicked(data: Artists)
     }
 
-    private fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
+    fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
         this.onItemClickCallback = onItemClickCallback
     }
 
