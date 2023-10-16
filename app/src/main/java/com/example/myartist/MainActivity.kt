@@ -4,6 +4,7 @@ import android.animation.ObjectAnimator
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.view.animation.AnticipateInterpolator
@@ -59,10 +60,14 @@ class MainActivity : AppCompatActivity() {
             }
         })
     }
-    private fun showSelectedAritsts(data: Artists) {
-        Toast.makeText(this, "Kamu memilih " + data.name, Toast.LENGTH_SHORT).show()
+    private fun showSelectedAritsts(artists: Artists) {
+        Toast.makeText(this, "Kamu memilih " + artists.name, Toast.LENGTH_SHORT).show()
     }
 
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.action_list -> rvArtist.layoutManager = LinearLayoutManager(this)
@@ -85,7 +90,7 @@ class MainActivity : AppCompatActivity() {
                 -splashScreenView.height.toFloat()
             )
             slideUp.interpolator = AnticipateInterpolator()
-            slideUp.duration = 200L
+            slideUp.duration = 1000L
 
             // Call SplashScreenView.remove at the end of your custom animation.
             slideUp.doOnEnd { splashScreenView.remove() }
