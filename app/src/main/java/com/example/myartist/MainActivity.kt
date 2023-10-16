@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.action_list -> rvArtist.layoutManager = LinearLayoutManager(this)
-            R.id.action_grid -> rvArtist.layoutManager = GridLayoutManager(this, 1)
+            R.id.action_grid -> rvArtist.layoutManager = GridLayoutManager(this, 2)
 //            R.id.action_about -> {
 //
 //            }
