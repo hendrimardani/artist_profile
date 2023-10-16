@@ -2,6 +2,7 @@
     <string name="app_name">MyArtist</string>
     <string name="list">List</string>
     <string name="grid">Grid</string>
+    <string name="about">About</string>
 
     <string-array name="data_name">
         <item>Andika Pratama</item>
@@ -26,7 +27,11 @@
         <item>Iis Laeliyah, dikenal sebagai Iis Dahlia (lahir 29 Mei 1972) adalah seorang penyanyi dan aktris berkebangsaan Indonesia. Sejak masih kecil Iis sangat suka menyanyi dan bercita-cita menjadi penyanyi. Bahkan saat masih duduk di bangku kelas 4 SD. Iis telah tampil di panggung menyumbangkan lagu dengan iringan Orgen Tunggal dalam pesta perkawinan atau perayaan 17 Agustus. Pada masa itu Elvy Sukaesih Sedang naik daun dan Rita Sugiarto mulai merambat naik.</item>
         <item>Hj. Ainur Rokhimah (lahir 21 Januari 1979), atau yang lebih dikenal sebagai Inul Daratista, adalah seorang penyanyi dangdut dan aktris berkebangsaan Indonesia. Inul terkenal dengan gaya Goyang Ngebor.[1] Ayah Inul bernama Abdullah Aman, dan ibunya bernama Hj. Rufia. Suami Inul adalah H. Adam Suseno.</item>
         <item>H. Irfan Hakim Firmansyah, S.Ag (lahir 15 Oktober 1975) adalah pemeran, presenter, pelawak dan konten kreator Indonesia.Putra ketujuh dari delapan bersaudara pasangan H. Rosyid Sukarya dan Hj. Juariah ini telah terbiasa berada di atas panggung, baik untuk membaca puisi, menari maupun menyanyi. Bahkan pada tahun 1997, Irfan pernah menjadi duta seni Indonesia. Irfan mendapat kesempatan pergi ke Jepang dan Eropa untuk menunjukkan kebudayaan Indonesia. Pengalaman tersebut membulatkan tekadnya untuk serius menekuni profesi di dunia hiburan.</item>
-        <item>Raffi Farid Ahmad (lahir 17 Februari 1987) atau yang lebih dikenal dengan Raffi Ahmad merupakan selebriti, aktor, pembawa acara, penyanyi, pengusaha, selebriti internet, YouTuber, dan produser asal Indonesia.</item>Raffi Farid Ahmad atau biasa dikenal dengan panggilan Raffi Ahmad ini dilahirkan di Bandung, Jawa Barat pada 17 Februari 1987. Ia merupakan anak sulung dari tiga bersaudara, dari pasangan almarhum Munawar Ahmad yang keturunan Pakistan dengan Amy Qanita yang keturunan Sunda.
+        <item>Raffi Farid Ahmad (lahir 17 Februari 1987) atau yang lebih dikenal dengan Raffi Ahmad merupakan selebriti, aktor, pembawa acara, penyanyi, pengusaha, selebriti internet, YouTuber, dan produser asal Indonesia.</item>
+        Raffi Farid Ahmad atau biasa dikenal dengan panggilan Raffi Ahmad ini dilahirkan di Bandung,
+        Jawa Barat pada 17 Februari 1987. Ia merupakan anak sulung dari tiga bersaudara, dari
+        pasangan almarhum Munawar Ahmad yang keturunan Pakistan dengan Amy Qanita yang keturunan
+        Sunda.
         <item>Ramzi Geys Thebe (lahir 23 Mei 1976) adalah pemeran, presenter dan pelawak Indonesia. Melalui perannya sebagai Ibrahim dalam sinetron Titipan Ilahi, Ramzi berhasil meraih predikat Aktor Pembantu Terpuji dalam Festival Film Bandung di tahun 2005.[1] Selain bermain sinetron, Ramzi juga menjadi pembawa acara komedi berjudul Rumpi di Trans 7 bersama Debby Sahertian dan Ruben Onsu.</item>
         <item>Nurina Permata Putri (lahir 16 Januari 1984), dikenal sebagai Rina Nose adalah pemeran, presenter, pelawak dan penyanyi Indonesia.Rina Nose mengawali karir saat bergabung dalam grup Jurnal yang mengikuti Audisi Pelawak TPI (API) sesi 3. Sebuah ajang pencarian bakat yang fokus pada talenta-talenta baru di dunia komedi. Lulus dari ajang tersebut, wanita berusia 39 tahun itu mulai mendapat tawaran untuk mengisi acara di TV dan lebih banyak tampil sendiri.</item>
         <item>Ruben Samuel Onsu (lahir 15 Agustus 1983) adalah seorang pembawa acara, pengusaha, komedian dan pemeran berkebangsaan Indonesia. Ia merupakan kakak dari Jordi Onsu. Pada tahun 1994 Ruben tergabung dalam acara Lenong BocahIa memandu acara Supersoulmate Show bersama Eko Patrio dan Ivan Gunawan, Kiss di Indosiar, Weekend Seru bersama Ocha dan Cari-Cari Pacar bersama Nico di Global TV. Bersama Adul di Trans7 ia memandu acara Belum Cukup Gede, dan di Trans TV untuk Happy Family dan Brownis (Obrowlan Manis).</item>

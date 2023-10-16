@@ -8,6 +8,16 @@ import com.example.myartist.databinding.ItemLayoutArtistBinding
 
 class ListArtistsAdapter(private val listArtists: ArrayList<Artists>): RecyclerView.Adapter
         <ListArtistsAdapter.ListViewHolder>() {
+    private lateinit var onItemClickCallback: OnItemClickCallback
+
+    interface OnItemClickCallback {
+        fun onItemClicked(data: Artists)
+    }
+
+    private fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
+        this.onItemClickCallback = onItemClickCallback
+    }
+
     class ListViewHolder(val binding: ItemLayoutArtistBinding) : RecyclerView
         .ViewHolder(binding.root)
 

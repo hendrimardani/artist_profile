@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bendera"
+    tools:context=".DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ramzi"
+            android:layout_marginTop="190dp"
+            android:layout_marginStart="108dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_detail_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:text="Nama Artis"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="108dp"
+            android:layout_marginRight="108dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="323dp" />
+
+        <TextView
+            android:id="@+id/tv_detail_description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+</ScrollView>
