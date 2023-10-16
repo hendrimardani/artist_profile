@@ -1,6 +1,7 @@
 package com.example.myartist
 
 import android.animation.ObjectAnimator
+import android.annotation.SuppressLint
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -36,6 +37,7 @@ class MainActivity : AppCompatActivity() {
         animation()
     }
 
+    @SuppressLint("Recycle")
     private fun getListArtist(): ArrayList<Artists> {
         val name = resources.getStringArray(R.array.data_name)
         val description = resources.getStringArray(R.array.data_description)

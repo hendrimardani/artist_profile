@@ -21,8 +21,7 @@ class ListArtistsAdapter(private val listArtists: ArrayList<Artists>): RecyclerV
     class ListViewHolder(val binding: ItemLayoutArtistBinding) : RecyclerView
         .ViewHolder(binding.root)
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListArtistsAdapter
-            .ListViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
         val binding = ItemLayoutArtistBinding.inflate(LayoutInflater
             .from(parent.context), parent, false)
         return ListViewHolder(binding)
@@ -37,7 +36,7 @@ class ListArtistsAdapter(private val listArtists: ArrayList<Artists>): RecyclerV
         // Mengirimkan data kedalam DetailActivity
         holder.itemView.setOnClickListener {
             val intentToDetail = Intent(holder.itemView.context, DetailActivity::class.java)
-            intentToDetail.putExtra("key_artists", listArtists[holder.adapterPosition])
+            intentToDetail.putExtra("key_artist", listArtists[holder.adapterPosition])
             holder.itemView.context.startActivity(intentToDetail)
         }
     }
