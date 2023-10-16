@@ -19,6 +19,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getListArtist(): ArrayList<Artists> {
+        val name = resources.getStringArray(R.array.data_name)
+        val description = resources.getStringArray(R.array.data_description)
+        val dataPhoto = resources.obtainTypedArray(R.array.data_photo)
+        val listArtists = ArrayList<Artists>()
 
+        for (i in name.indices) {
+            val artists = Artists(name[i], description[i], dataPhoto.getResourceId(i, -1))
+            listArtists.add(artists)
+        }
+        return listArtists
     }
 }
