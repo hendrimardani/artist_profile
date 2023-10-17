@@ -20,7 +20,7 @@ import com.example.myartist.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var rvArtist: RecyclerView
-    private var list = ArrayList<Artists>()
+    private val list = ArrayList<Artists>()
     @RequiresApi(Build.VERSION_CODES.S)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -36,7 +36,7 @@ class ListArtistsAdapter(private val listArtists: ArrayList<Artists>): RecyclerV
         // Mengirimkan data kedalam DetailActivity
         holder.itemView.setOnClickListener {
             val intentToDetail = Intent(holder.itemView.context, DetailActivity::class.java)
-            intentToDetail.putExtra("key_artist", listArtists[holder.adapterPosition])
+            intentToDetail.putExtra("key_artis", listArtists[holder.adapterPosition])
             holder.itemView.context.startActivity(intentToDetail)
         }
     }
