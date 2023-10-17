@@ -2,6 +2,7 @@ package com.example.myartist
 
 import android.animation.ObjectAnimator
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -74,9 +75,10 @@ class MainActivity : AppCompatActivity() {
         when (item.itemId) {
             R.id.action_list -> rvArtist.layoutManager = LinearLayoutManager(this)
             R.id.action_grid -> rvArtist.layoutManager = GridLayoutManager(this, 2)
-//            R.id.action_about -> {
-//
-//            }
+            R.id.action_about -> {
+                val intentToAbout = Intent(this@MainActivity, ActivityAbout::class.java)
+                startActivity(intentToAbout)
+            }
         }
         return super.onOptionsItemSelected(item)
     }

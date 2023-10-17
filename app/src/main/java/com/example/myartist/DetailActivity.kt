@@ -10,7 +10,7 @@ import com.example.myartist.databinding.ActivityDetailBinding
 class DetailActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDetailBinding
     override fun onCreate(savedInstanceState: Bundle?) {
-        val binding = ActivityDetailBinding.inflate(layoutInflater)
+        binding = ActivityDetailBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
