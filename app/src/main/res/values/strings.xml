@@ -7,6 +7,7 @@
     <string name="about">About</string>
     <string name="name_about">Hendri Mardani</string>
     <string name="description_about">Saya Hendri Mardani berasal dari Tasikmalaya, yang sedang berkulian di Universitas Bina Sarana Informatika saat ini menduduki semester pertama, Namun disamping itu saya memiliki keahlian dalam bidang Machine Learning, Data Science, dan saat ini sedang proses belajar dalam bidang Mobile Aplications menggunakan pemrograman Kotlin.</string>
+    <string name="email_about">hendrimardani290301@gmail.com</string>
 
     <string-array name="data_name">
         <item>Andika Pratama</item>
