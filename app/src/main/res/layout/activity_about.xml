@@ -19,7 +19,7 @@
             android:layout_height="200dp"
             android:layout_gravity="center"
             android:layout_marginTop="210dp"
-            android:src="@drawable/hendri"
+            android:src="@drawable/hendri_2"
             tools:ignore="MissingConstraints" />
 
         <TextView
