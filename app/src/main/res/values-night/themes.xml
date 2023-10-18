@@ -3,5 +3,6 @@
     <style name="Base.Theme.MyArtist" parent="Theme.Material3.DayNight">
         <!-- Customize your dark theme here. -->
         <item name="colorPrimary">@color/orange</item>
+        <item name="colorPrimaryVariant">@color/blue</item>
     </style>
 </resources>

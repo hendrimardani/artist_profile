@@ -13,6 +13,7 @@ import java.sql.Array
 @Suppress("DEPRECATION")
 class DetailActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDetailBinding
+    private var daftar = ArrayList<Artists>()
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivityDetailBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)

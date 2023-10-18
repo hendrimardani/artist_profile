@@ -3,6 +3,7 @@
     <style name="Base.Theme.MyArtist" parent="Theme.Material3.DayNight">
         <!-- Customize your light theme here. -->
         <item name="colorPrimary">@color/orange</item>
+        <item name="colorPrimaryVariant">@color/blue</item>
     </style>
 
     <style name="Theme.MyArtist" parent="Base.Theme.MyArtist" />
